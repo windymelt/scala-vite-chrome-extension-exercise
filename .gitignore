@@ -27,3 +27,5 @@ dist-ssr
 .metals
 .vscode
 target/
+.bloop
+metals.sbt
