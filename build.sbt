@@ -1,6 +1,6 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
-lazy val livechart = project
+lazy val hideall = project
   .in(file("."))
   .enablePlugins(ScalaJSPlugin) // Enable the Scala.js plugin in this project
   .settings(
@@ -19,7 +19,7 @@ lazy val livechart = project
     scalaJSLinkerConfig ~= {
       _.withModuleKind(ModuleKind.ESModule)
         .withModuleSplitStyle(
-          ModuleSplitStyle.SmallModulesFor(List("livechart"))
+          ModuleSplitStyle.SmallModulesFor(List("dev.capslock.hideall"))
         )
     },
 
